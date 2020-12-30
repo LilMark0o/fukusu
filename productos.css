@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: whitesmoke;
+}
+.navbar{
+    width: 90%;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+.navbar .logo{
+    width: 200px;
+    margin:30px 0 50px;
+    cursor: pointer;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+button{
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 20px;
+    color: rgb(49, 49, 49);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+/* PARTE A EDITAR */
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 30px;
+}
+.container-1{
+    grid-column: 2/4;
+    grid-row: span 3;
+    margin-left: 30px;
+}
+
+
+.container-1 img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.container-2{
+    grid-column: 4/6;
+    grid-row: span 3;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+    flex-direction: column;
+    margin-right: 30px;
+}
+.info{
+    color: rgb(24, 24, 24);
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.container-2 p{
+    padding: 0 20px;
+}
+.rating .fa{
+    color: #ff523b;
+    margin: 0 0 17px;
+}
+.container-2 .price{
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+.container-2 .rati{
+    color: rgb(63, 63, 63);
+    margin-bottom: 6px;
+}
+
+.container-3{
+    margin: 25px 30px 0;
+    grid-column: 1/7;
+    grid-row: span 1;
+}
+.container-3 p{
+    text-align: center;
+    color:rgb(26, 26, 26);
+}
+.container-3 img{
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.container-3 .chiquito{
+    margin-top: 7.5px;
+    color:rgb(116, 116, 116);
+}

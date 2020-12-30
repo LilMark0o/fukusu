@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fukusū Store</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <div class="user">
+                <a href="javascript:history.back()">
+                    <button class="buttonn" >Volver</button>
+                </a>
+                <a href="index.html">
+                    <button class="buttonn" >Explorar</button>
+                </a>
+            </div>
+        </div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()" >Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Registrar</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/lilmark0o/" target="_blank">
+                    <img src="images/logos/ig.png">
+                </a>
+                <a href="https://www.instagram.com/lilmark0o/" target="_blank">
+                    <img src="images/logos/wa.png">
+                </a>
+                <a href="https://www.instagram.com/lilmark0o/" target="_blank">
+                    <img src="images/logos/yt.png">
+                </a>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="EnterPassword" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="EnterPassword" required>
+                <input type="checkbox" class="check-box"><span>Estoy de acuerdo con los terminos y condiciones</span>
+                <button type="submit" class="submit-btn">Registrar</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+</html>
